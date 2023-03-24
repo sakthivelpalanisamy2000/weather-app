@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            background-color: rgb(255, 255, 255);
+             display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 800px;
+            width: 50%;
+            display: flex;
+            border: 2px dashed rgba(0, 0, 0, 0.822);
+            /* justify-content: center; */
+            /* align-items: center; */
+            flex-direction: column;
+            border-radius: 20px;
+
+        }
+        .h1{
+            text-align: center;
+            font-weight: 700;
+            font-size: 40px;
+            padding-top: 3px;
+            font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        .form{
+            text-align: center;
+            padding-top: 40px;
+            gap: 50px;
+        }
+        input{
+            height: 30px;
+            border-color: white;
+            border-bottom: 2px dashed black;
+            background-color: rgb(234, 230, 230);
+            padding-left: 20px;
+            margin-left: 30px;
+
+        }
+        button{
+            color: white;
+            margin-left: 10px;
+            padding: 10px 8px;
+            border-radius: 20px;
+            background-color: rgb(3, 62, 104);
+        }
+        .valueshowbox{
+            height: 190px;
+            width: 80%;
+            border:2px solid rgba(0, 0, 0, 0.455);
+            margin-top: 40px;
+            margin-left: 80px;
+            border-radius: 20px;
+            background-color: rgb(255, 241, 223);
+            
+           /* justify-content: center; */
+            /* align-items: center;
+            text-align: center; */
+        }
+        .h2{
+            font-size: 20px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-weight: 500;
+        }
+        .num{
+             text-align: center;
+          
+        }
+        .number{
+            
+            font-weight: 700;
+            font-size: 60px;
+        }
+        .text{
+            font-size: 20px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-weight: 500;
+        }
+        .time{
+            font-size: 20px;
+            padding-left: 10px;
+            padding-top: 2px;
+            font-weight: 500;
+            color: rgb(142, 142, 142);
+        }
+        .showdetails{
+            height: 350px;
+            width: 80%;
+            display: grid;
+            grid-template-columns: auto auto;
+            /* border:2px solid rgba(0, 0, 0, 0.455); */
+            margin-top: 40px;
+            margin-left: 80px;
+            /* padding-left: 10px; */
+            /* padding-top: 10px; */
+            gap: 30px;
+        }
+        .detailbox{
+            width: 250px;
+            height: 40px;
+            border-bottom: 2px dashed black;
+            font-size: 20px;
+            font-weight: 900;
+        }
+        span{
+            padding-left: 45px;
+            color: rgb(138, 138, 138);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="h1"> Weather App</div>
+        <div class="form">
+            <input type="text"/>
+            <input type="text"/>
+            <button >Submit</button>
+        </div>
+        <div class="valueshowbox">
+            <div class="h2">Mumbai , IN. Weather</div>
+            <div class="time">As of 7:08:38 PM</div>
+            <div class="num">
+                <div class="number">28<sup>0</sup> <img src="icon.svg" alt=""></div>
+                
+            </div>
+            <div class="text">haze</div>
+
+        </div>
+        <div class="showdetails">
+            <div class="detailbox">High/Low<span>28/28</span></div>
+            <div class="detailbox">Wind <span>14 km/hr</span></div>
+            <div class="detailbox">Humidity <span>88%</span></div>
+            <div class="detailbox">Wind Direction <span>270 deg</span></div>
+            <div class="detailbox">Pressure <span>1005 hpa</span></div>
+            <div class="detailbox">Sunrise <span>6:26:20 AM</span></div>
+            <div class="detailbox">Visibility <span>4 Km</span></div>
+            <div class="detailbox">Sunset <span>6:41:27 PM</span></div>
+
+        </div>
+    </div>
+</body>
+</html>
